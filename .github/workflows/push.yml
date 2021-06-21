@@ -1,0 +1,31 @@
+name: push
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore -c Release
+    - name: Test
+      run: dotnet test
+    - name: Publish Panosen.CodeDom.Tag.Vue
+      run: dotnet nuget push Panosen.CodeDom.Tag.Vue/bin/Release/Panosen.CodeDom.Tag.Vue.*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.PANOSEN_NUGET_API_KEY}} --skip-duplicate
+    - name: Publish Panosen.CodeDom.Tag.Vue.Element
+      run: dotnet nuget push Panosen.CodeDom.Tag.Vue.Element/bin/Release/Panosen.CodeDom.Tag.Vue.Element.*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.PANOSEN_NUGET_API_KEY}} --skip-duplicate
+    - name: Publish Panosen.CodeDom.Tag.Vue.Pano
+      run: dotnet nuget push Panosen.CodeDom.Tag.Vue.Pano/bin/Release/Panosen.CodeDom.Tag.Vue.Pano.*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.PANOSEN_NUGET_API_KEY}} --skip-duplicate
+    - name: Publish Panosen.CodeDom.Tag.Vue.Vuetify
+      run: dotnet nuget push Panosen.CodeDom.Tag.Vue.Vuetify/bin/Release/Panosen.CodeDom.Tag.Vue.Vuetify.*.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.PANOSEN_NUGET_API_KEY}} --skip-duplicate
