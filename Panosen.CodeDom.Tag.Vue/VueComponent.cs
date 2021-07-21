@@ -1,5 +1,4 @@
-﻿using Panosen.CodeDom.Tag.Basic;
-using System;
+﻿using System;
 
 namespace Panosen.CodeDom.Tag.Vue
 {
