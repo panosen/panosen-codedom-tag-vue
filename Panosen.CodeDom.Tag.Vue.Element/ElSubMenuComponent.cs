@@ -14,6 +14,6 @@ namespace Panosen.CodeDom.Tag.Vue.Element
         /// <summary>
         /// el-sub-menu
         /// </summary>
-        public override string Name { get; set; } = "el-submenu";
+        public override string Name { get; set; } = "el-sub-menu";
     }
 }
