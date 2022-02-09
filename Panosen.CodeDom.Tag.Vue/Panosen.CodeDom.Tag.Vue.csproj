@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Panosen.CodeDom.Tag" Version="0.3.1" />
+    <PackageReference Include="Panosen.CodeDom.Tag" Version="0.4.3" />
   </ItemGroup>
 
 </Project>
