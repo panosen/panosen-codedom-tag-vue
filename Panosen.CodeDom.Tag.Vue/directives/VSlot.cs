@@ -16,7 +16,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-slot:${name}
         /// </summary>
         public static TVueComponent VSlot<TVueComponent>(this TVueComponent builder, string name)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddAttribute($"v-slot:{name}");
 
@@ -27,7 +27,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-slot:${name}="${value}"
         /// </summary>
         public static TVueComponent VSlot<TVueComponent>(this TVueComponent builder, string name, string value)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddProperty($"v-slot:{name}", value);
 
