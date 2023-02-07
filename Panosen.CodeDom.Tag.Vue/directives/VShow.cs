@@ -16,7 +16,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-text
         /// </summary>
         public static TVueComponent VShow<TVueComponent>(this TVueComponent builder, string show)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddProperty("v-show", show);
 

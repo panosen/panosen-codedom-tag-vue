@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Panosen.CodeDom.Tag.Vue.Vuetify
 {
-    public class VCheckboxComponent : VueComponent
+    public class VCheckboxComponent : BasicComponent
     {
         public override string Name { get; set; } = "v-checkbox";
 

@@ -9,7 +9,7 @@ namespace Panosen.CodeDom.Tag.Vue.Vuetify
     /// <summary>
     /// v-select
     /// </summary>
-    public class VSelectComponent : VueComponent
+    public class VSelectComponent : BasicComponent
     {
         /// <summary>
         /// v-select

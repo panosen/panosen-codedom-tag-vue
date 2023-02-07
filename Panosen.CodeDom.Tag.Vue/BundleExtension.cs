@@ -15,7 +15,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// required
         /// </summary>
         public static TVueComponent Required<TVueComponent>(this TVueComponent builder)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddAttribute("required");
 
@@ -26,7 +26,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// disabled
         /// </summary>
         public static TVueComponent Disabled<TVueComponent>(this TVueComponent builder)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddAttribute("disabled");
 

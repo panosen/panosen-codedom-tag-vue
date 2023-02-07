@@ -9,7 +9,7 @@ namespace Panosen.CodeDom.Tag.Vue.Vuetify
     /// <summary>
     /// https://vuetifyjs.com/en/components/selection-controls#switches-boolean
     /// </summary>
-    public class VSwitchComponent : VueComponent
+    public class VSwitchComponent : BasicComponent
     {
         /// <summary>
         /// vue tag名称

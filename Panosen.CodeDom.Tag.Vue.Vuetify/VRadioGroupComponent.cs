@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Panosen.CodeDom.Tag.Vue.Vuetify
 {
-    public class VRadioGroupComponent : VueComponent
+    public class VRadioGroupComponent : BasicComponent
     {
         public override string Name { get; set; } = "v-radio-group";
 

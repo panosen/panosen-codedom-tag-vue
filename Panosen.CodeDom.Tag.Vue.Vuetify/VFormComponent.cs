@@ -9,7 +9,7 @@ namespace Panosen.CodeDom.Tag.Vue.Vuetify
     /// <summary>
     /// https://vuetifyjs.com/en/components/forms
     /// </summary>
-    public class VFormComponent : VueComponent
+    public class VFormComponent : BasicComponent
     {
         public override string Name { get; set; } = "v-form";
 

@@ -21,7 +21,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// <summary>
         /// label="label"
         /// </summary>
-        public static TVueComponent _To<TVueComponent>(this TVueComponent component, string to) where TVueComponent : VueComponent, IRouterLink
+        public static TVueComponent _To<TVueComponent>(this TVueComponent component, string to) where TVueComponent : BasicComponent, IRouterLink
         {
             component.AddProperty(":to", to);
 

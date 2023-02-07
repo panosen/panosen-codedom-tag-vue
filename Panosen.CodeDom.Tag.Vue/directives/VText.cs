@@ -16,7 +16,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-text
         /// </summary>
         public static TVueComponent VText<TVueComponent>(this TVueComponent builder, string textContent)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddProperty("v-text", textContent);
 

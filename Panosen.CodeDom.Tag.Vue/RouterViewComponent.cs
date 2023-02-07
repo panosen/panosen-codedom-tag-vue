@@ -9,7 +9,7 @@ namespace Panosen.CodeDom.Tag.Vue
     /// <summary>
     /// router-view
     /// </summary>
-    public class RouterViewComponent : VueComponent
+    public class RouterViewComponent : BasicComponent
     {
         public override string Name { get; set; } = "router-view";
 

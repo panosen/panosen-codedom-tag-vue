@@ -21,7 +21,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// <summary>
         /// label="label"
         /// </summary>
-        public static TVueComponent Label<TVueComponent>(this TVueComponent component, string label) where TVueComponent : VueComponent, ILabel
+        public static TVueComponent Label<TVueComponent>(this TVueComponent component, string label) where TVueComponent : BasicComponent, ILabel
         {
             component.AddProperty("label", label);
 
@@ -31,7 +31,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// <summary>
         /// label="label"
         /// </summary>
-        public static TVueComponent _Label<TVueComponent>(this TVueComponent component, string label) where TVueComponent : VueComponent, ILabel
+        public static TVueComponent _Label<TVueComponent>(this TVueComponent component, string label) where TVueComponent : BasicComponent, ILabel
         {
             component.AddProperty(":label", label);
 

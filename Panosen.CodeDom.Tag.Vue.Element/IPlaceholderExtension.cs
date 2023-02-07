@@ -25,7 +25,7 @@ namespace Panosen.CodeDom.Tag.Vue.Element
         /// <param name="component"></param>
         /// <param name="placeholder"></param>
         /// <returns></returns>
-        public static TVueComponent Placeholder<TVueComponent>(this TVueComponent component, string placeholder) where TVueComponent : VueComponent, IPlaceholder
+        public static TVueComponent Placeholder<TVueComponent>(this TVueComponent component, string placeholder) where TVueComponent : BasicComponent, IPlaceholder
         {
             component.AddProperty("placeholder", placeholder);
 

@@ -16,7 +16,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-once
         /// </summary>
         public static TVueComponent VOnce<TVueComponent>(this TVueComponent builder)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddAttribute("v-once");
 

@@ -23,7 +23,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// </summary>
         /// <returns></returns>
         public static TVueComponent OnClick<TVueComponent>(this TVueComponent component, string statement)
-            where TVueComponent : VueComponent, IOnClick
+            where TVueComponent : BasicComponent, IOnClick
         {
             component.AddProperty("@click.stop", statement);
 

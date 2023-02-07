@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Panosen.CodeDom.Tag.Vue.Vuetify
 {
-    public class VDialogComponent : VueComponent
+    public class VDialogComponent : BasicComponent
     {
         public override string Name { get; set; } = "v-dialog";
     }

@@ -42,7 +42,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-bind
         /// </summary>
         public static TVueComponent VBind<TVueComponent>(this TVueComponent builder, string value)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddProperty($"v-bind", value);
 
@@ -53,7 +53,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-bind
         /// </summary>
         public static TVueComponent VBind<TVueComponent>(this TVueComponent builder, string key, string value, VBindModifiers vBindModifiers = default)
-        where TVueComponent : VueComponent
+        where TVueComponent : BasicComponent
         {
             switch (vBindModifiers)
             {

@@ -77,7 +77,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-on
         /// </summary>
         public static TVueComponent VOn<TVueComponent>(this TVueComponent builder, string @event, string handler, VOnModifiers vOnModifiers = default)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             switch (vOnModifiers)
             {

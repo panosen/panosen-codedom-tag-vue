@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Panosen.CodeDom.Tag.Vue.Pano
 {
-    public abstract class PanoComponent : VueComponent
+    public abstract class PanoComponent : BasicComponent
     {
         public override bool BuiltIn => true;
     }

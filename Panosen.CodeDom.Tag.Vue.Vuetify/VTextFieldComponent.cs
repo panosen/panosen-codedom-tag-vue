@@ -9,7 +9,7 @@ namespace Panosen.CodeDom.Tag.Vue.Vuetify
     /// <summary>
     /// v-text-field
     /// </summary>
-    public class VTextFieldComponent : VueComponent, ILabel
+    public class VTextFieldComponent : BasicComponent, ILabel
     {
         /// <summary>
         /// v-text-field

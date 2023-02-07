@@ -16,7 +16,7 @@ namespace Panosen.CodeDom.Tag.Vue
         /// v-else-if
         /// </summary>
         public static TVueComponent VElseIf<TVueComponent>(this TVueComponent builder, string elseIf)
-            where TVueComponent : VueComponent
+            where TVueComponent : BasicComponent
         {
             builder.AddProperty("v-else-if", elseIf);
 
