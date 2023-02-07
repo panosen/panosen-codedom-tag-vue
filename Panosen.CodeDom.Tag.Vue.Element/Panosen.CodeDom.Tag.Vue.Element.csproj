@@ -4,7 +4,7 @@
     <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
     <AssemblyName>Panosen.CodeDom.Tag.Vue.Element</AssemblyName>
     <RootNamespace>Panosen.CodeDom.Tag.Vue.Element</RootNamespace>
-    <Version>0.0.9</Version>
+    <Version>0.1.0</Version>
     <Authors>harriszhang@live.cn</Authors>
     <Company>harriszhang@live.cn</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -16,6 +16,10 @@
 
   <ItemGroup>
     <None Include="..\panosen.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Panosen.CodeDom.Tag.Html" Version="0.4.6" />
   </ItemGroup>
 
   <ItemGroup>
